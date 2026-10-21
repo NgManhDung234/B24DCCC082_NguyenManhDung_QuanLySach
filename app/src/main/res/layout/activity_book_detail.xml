@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHI TIẾT SÁCH"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#243B64"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sách"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#243B64"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvAuthorGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc000000"
+            android:text="Tác giả và thể loại"
+            android:textSize="17sp"
+            android:lineSpacingExtra="6dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc000000"
+            android:text="Tình trạng: Chưa đọc"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <RatingBar
+            android:id="@+id/rbDetailRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:isIndicator="false" />
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc000000"
+            android:text="Ghi chú: Không có"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnMarkRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐÁNH DẤU ĐÃ ĐỌC"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XÓA SÁCH"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

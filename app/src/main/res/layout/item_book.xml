@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_book_card">
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sách"
+        android:textColor="#252525"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tác giả: Nguyễn Văn A"
+        android:textColor="#757575"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvBookGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công nghệ"
+            android:textColor="#00695C"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#DDF3EF"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+
+        <TextView
+            android:id="@+id/tvBookStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Đang đọc"
+            android:textColor="#E67E22"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#FFF0DD"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+
+        <TextView
+            android:id="@+id/tvBookRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="★★★★☆"
+            android:textColor="#FFA500"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
